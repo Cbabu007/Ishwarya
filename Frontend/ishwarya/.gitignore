@@ -1,24 +1,38 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
+# === FRONTEND (React, Angular, Vite) ===
+node_modules/
+dist/
+build/
 *.local
-
-# Editor directories and files
+.vite/
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+
+# === BACKEND (ASP.NET Core) ===
+Backend/bin/
+Backend/obj/
+Backend/.vs/
+Backend/appsettings*.json
+Backend/wwwroot/uploads/
+Backend/Migrations/
+
+# === COMMON ===
+*.log
+*.tmp
+*.bak
 *.suo
-*.ntvs*
-*.njsproj
+*.user
+*.DS_Store
+Thumbs.db
+
+# === IDE Specific ===
+.idea/
+.vscode/
 *.sln
+*.njsproj
+*.ntvs*
 *.sw?
+
+# === OS Files ===
+ehthumbs.db
+Icon?
+Desktop.ini
