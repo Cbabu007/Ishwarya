@@ -1,0 +1,128 @@
+/* Center frame layout */
+.center-box {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Tabs centered */
+.tab-bar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.tab {
+  cursor: pointer;
+  color: #333;
+  padding-bottom: 2px;
+}
+
+.tab.active {
+  color: #1976d2;
+  border-bottom: 3px solid #1976d2;
+}
+
+.tab-underline {
+  height: 3px;
+  width: 100%;
+  background-color: #1976d2;
+  margin-bottom: 20px;
+}
+
+/* Form row layout */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 16px;
+}
+
+.form-row label {
+  min-width: 110px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-row input[type="text"],
+.form-row select,
+.form-row input[type="file"] {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #f9f9f9;
+}
+
+.form-row input[type="file"] {
+  padding: 4px 0;
+  background: none;
+}
+
+.preview-icon {
+  font-size: 22px;
+  margin-left: 8px;
+  cursor: pointer;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.preview-icon:hover {
+  color: #1976d2;
+}
+
+/* Button styles for 100% width and color */
+button {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[style*="green"] {
+  background: #2e7d32 !important;
+  color: #fff !important;
+}
+
+button[style*="red"] {
+  background: #d32f2f !important;
+  color: #fff !important;
+}
+
+button[style*="brown"] {
+  background: #795548 !important;
+  color: #fff !important;
+}
+
+button[style*="blue"] {
+  background: #1976d2 !important;
+  color: #fff !important;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .center-box {
+    padding: 10px;
+  }
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .form-row label {
+    min-width: unset;
+  }
+}
+

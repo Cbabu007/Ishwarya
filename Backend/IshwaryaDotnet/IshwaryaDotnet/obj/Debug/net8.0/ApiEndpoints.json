@@ -1,0 +1,2669 @@
+[
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.AddExamController",
+    "Method": "Index",
+    "RelativePath": "api/admin/exam/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Video",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pdf",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PdfFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "Delete",
+    "RelativePath": "api/admin/exam/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "GetCourses",
+    "RelativePath": "api/admin/exam/delete/courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "Fetch",
+    "RelativePath": "api/admin/exam/delete/fetch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "PreviewPdf",
+    "RelativePath": "api/admin/exam/delete/preview/pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "PreviewVideo",
+    "RelativePath": "api/admin/exam/delete/preview/video",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/admin/exam/delete/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "GetTestNames",
+    "RelativePath": "api/admin/exam/delete/testnames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "GetTestNos",
+    "RelativePath": "api/admin/exam/delete/testnos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.DeleteExamController",
+    "Method": "GetTopics",
+    "RelativePath": "api/admin/exam/delete/topics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "UpdateExam",
+    "RelativePath": "api/admin/exam/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Video",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pdf",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PdfFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "GetCourses",
+    "RelativePath": "api/admin/exam/edit/courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "PreviewPdf",
+    "RelativePath": "api/admin/exam/edit/preview/pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "PreviewVideo",
+    "RelativePath": "api/admin/exam/edit/preview/video",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/admin/exam/edit/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "GetTestNames",
+    "RelativePath": "api/admin/exam/edit/testnames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "GetTestNos",
+    "RelativePath": "api/admin/exam/edit/testnos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.EditExamController",
+    "Method": "GetTopics",
+    "RelativePath": "api/admin/exam/edit/topics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "GetCourses",
+    "RelativePath": "api/admin/exam/view/courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "GetExam",
+    "RelativePath": "api/admin/exam/view/fetch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "PreviewPdf",
+    "RelativePath": "api/admin/exam/view/preview/pdf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "PreviewVideo",
+    "RelativePath": "api/admin/exam/view/preview/video",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/admin/exam/view/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "GetTestNames",
+    "RelativePath": "api/admin/exam/view/testnames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "GetTestNos",
+    "RelativePath": "api/admin/exam/view/testnos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Exams.ViewExamController",
+    "Method": "GetTopics",
+    "RelativePath": "api/admin/exam/view/topics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.AddNotesController",
+    "Method": "AddNotes",
+    "RelativePath": "api/admin/notes/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PdfPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PdfFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.DeleteNotesController",
+    "Method": "DeleteNoteBySelection",
+    "RelativePath": "api/admin/notes/delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.DeleteNotesController",
+    "Method": "GetCourses",
+    "RelativePath": "api/admin/notes/delete/courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.DeleteNotesController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/admin/notes/delete/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.DeleteNotesController",
+    "Method": "GetTopics",
+    "RelativePath": "api/admin/notes/delete/topics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.EditNotesController",
+    "Method": "UpdateNote",
+    "RelativePath": "api/admin/notes/edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PdfPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "VideoFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PdfFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.EditNotesController",
+    "Method": "GetCourses",
+    "RelativePath": "api/admin/notes/edit/courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.EditNotesController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/admin/notes/edit/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.EditNotesController",
+    "Method": "GetTopics",
+    "RelativePath": "api/admin/notes/edit/topics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.ViewNotesController",
+    "Method": "GetNoteBySelection",
+    "RelativePath": "api/admin/notes/view/by-selection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.ViewNotesController",
+    "Method": "GetCourses",
+    "RelativePath": "api/admin/notes/view/courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.ViewNotesController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/admin/notes/view/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Notes.ViewNotesController",
+    "Method": "GetTopics",
+    "RelativePath": "api/admin/notes/view/topics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Pdf.GeneratePdfController",
+    "Method": "Generate",
+    "RelativePath": "api/admin/pdf/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "IshwaryaDotnet.Controllers.Admin.Pdf.PdfRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "ExtractPdf",
+    "RelativePath": "api/admin/QuestionAnswer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "GetCourses",
+    "RelativePath": "api/admin/QuestionAnswer/courses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "GetLanguages",
+    "RelativePath": "api/admin/QuestionAnswer/languages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "GetSubjects",
+    "RelativePath": "api/admin/QuestionAnswer/subjects",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "GetTestNames",
+    "RelativePath": "api/admin/QuestionAnswer/testnames",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "GetTestNos",
+    "RelativePath": "api/admin/QuestionAnswer/testnos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "GetTopics",
+    "RelativePath": "api/admin/QuestionAnswer/topics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "GetTypes",
+    "RelativePath": "api/admin/QuestionAnswer/types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.QuestionAnswerController",
+    "Method": "Upload",
+    "RelativePath": "api/admin/QuestionAnswer/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuestionFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnswerFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Registration.AddRegistrationController",
+    "Method": "AddStudent",
+    "RelativePath": "api/admin/registration/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhotoPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MiddleName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateOfBirth",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "BloodGroup",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AlternativePhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AdmissionDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FatherName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FatherOccupation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FatherPhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotherName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotherOccupation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotherPhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ParentEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AadharNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UploadAadhar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "AadharPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Religion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Caste",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CasteName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nationality",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AddressType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DoorNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Street",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Area",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "City",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "District",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "State",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pincode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType10",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName10",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName10",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut10",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Registration.DeleteRegistrationController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/admin/registration/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Registration.EditRegistrationController",
+    "Method": "GetStudent",
+    "RelativePath": "api/admin/registration/edit/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Registration.EditRegistrationController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/admin/registration/edit/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photo",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhotoPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MiddleName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateOfBirth",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "BloodGroup",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AlternativePhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AdmissionDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FatherName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FatherOccupation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FatherPhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotherName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotherOccupation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "MotherPhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ParentEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AadharNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UploadAadhar",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "AadharPath",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Religion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Caste",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CasteName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nationality",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "AddressType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DoorNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Street",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Area",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "City",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "District",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "State",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Pincode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut1",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut2",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut3",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut4",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut5",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut6",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut7",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut8",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut9",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeType10",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DegreeName10",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "InstituteName10",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "YearPassedOut10",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Registration.ViewRegistrationController",
+    "Method": "GetByCourse",
+    "RelativePath": "api/admin/registration/view/by-course/{course}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Registration.ViewRegistrationController",
+    "Method": "GetById",
+    "RelativePath": "api/admin/registration/view/by-id/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Tests.AddTestController",
+    "Method": "AddTest",
+    "RelativePath": "api/admin/tests/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "IshwaryaDotnet.Models.Admin.Test.Test",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Tests.DeleteTestController",
+    "Method": "DeleteBulk",
+    "RelativePath": "api/admin/tests/delete/bulk",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "IshwaryaDotnet.Controllers.Admin.Tests.DeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Tests.EditTestController",
+    "Method": "GetDropdownValues",
+    "RelativePath": "api/admin/tests/edit/dropdowns",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Tests.EditTestController",
+    "Method": "GetBySelections",
+    "RelativePath": "api/admin/tests/edit/get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "IshwaryaDotnet.Controllers.Admin.Tests.SelectionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Admin.Tests.EditTestController",
+    "Method": "UpdateBySelection",
+    "RelativePath": "api/admin/tests/edit/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "IshwaryaDotnet.Controllers.Admin.Tests.EditTestRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.DashboardController",
+    "Method": "GetCorrectGraph",
+    "RelativePath": "api/Dashboard/correct-graph",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.DashboardController",
+    "Method": "GetGraphData",
+    "RelativePath": "api/Dashboard/graph-data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.DashboardController",
+    "Method": "GetLeaderboard",
+    "RelativePath": "api/Dashboard/leaderboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.DashboardController",
+    "Method": "GetTodayLeaderboard",
+    "RelativePath": "api/Dashboard/leaderboard-today",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.ContentController",
+    "Method": "GetContentByLogin",
+    "RelativePath": "api/user/content/by-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.CourseController",
+    "Method": "GetCoursesByLogin",
+    "RelativePath": "api/user/Course/by-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[IshwaryaDotnet.Model.User.Course, IshwaryaDotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.SubjectController",
+    "Method": "GetSubjectsFromNotes",
+    "RelativePath": "api/user/Subject/from-notes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[IshwaryaDotnet.Models.User.UserSubject, IshwaryaDotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.Test.WriteTestController",
+    "Method": "GetTestsByLogin",
+    "RelativePath": "api/user/WriteTest/by-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.Test.WriteTestController",
+    "Method": "FetchReview",
+    "RelativePath": "api/user/WriteTest/fetch-review",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.Test.WriteTestController",
+    "Method": "GetExamVideo",
+    "RelativePath": "api/user/WriteTest/get-exam-video",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.Test.WriteTestController",
+    "Method": "GetQuestionAnswerPaper",
+    "RelativePath": "api/user/WriteTest/get-papers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "testName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "testNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.Test.WriteTestController",
+    "Method": "SaveAnswer",
+    "RelativePath": "api/user/WriteTest/save-answer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestNo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Language",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "QuestionNo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "AnswerText",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.User.Test.WriteTestController",
+    "Method": "SaveResult",
+    "RelativePath": "api/user/WriteTest/save-result",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Course",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Subject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestNo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Language",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "Correct",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Wrong",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Skipped",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalScore",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.Login.UserLoginController",
+    "Method": "Login",
+    "RelativePath": "api/UserLogin/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IshwaryaDotnet.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[IshwaryaDotnet.WeatherForecast, IshwaryaDotnet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

@@ -1,0 +1,4060 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "IshwaryaDotnet",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/admin/exam/add": {
+      "post": {
+        "tags": [
+          "AddExam"
+        ],
+        "parameters": [
+          {
+            "name": "ID",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "Course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "TestName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "TestNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Video",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Pdf",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "VideoFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "PdfFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "VideoFile": {
+                  "style": "form"
+                },
+                "PdfFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/add": {
+      "post": {
+        "tags": [
+          "AddNotes"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "Mode": {
+                    "type": "string"
+                  },
+                  "Course": {
+                    "type": "string"
+                  },
+                  "Subject": {
+                    "type": "string"
+                  },
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "VideoPath": {
+                    "type": "string"
+                  },
+                  "PdfPath": {
+                    "type": "string"
+                  },
+                  "VideoFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "PdfFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Mode": {
+                  "style": "form"
+                },
+                "Course": {
+                  "style": "form"
+                },
+                "Subject": {
+                  "style": "form"
+                },
+                "Topic": {
+                  "style": "form"
+                },
+                "VideoPath": {
+                  "style": "form"
+                },
+                "PdfPath": {
+                  "style": "form"
+                },
+                "VideoFile": {
+                  "style": "form"
+                },
+                "PdfFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/registration/add": {
+      "post": {
+        "tags": [
+          "AddRegistration"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  },
+                  "Course": {
+                    "type": "string"
+                  },
+                  "Photo": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "PhotoPath": {
+                    "type": "string"
+                  },
+                  "FirstName": {
+                    "type": "string"
+                  },
+                  "MiddleName": {
+                    "type": "string"
+                  },
+                  "LastName": {
+                    "type": "string"
+                  },
+                  "DateOfBirth": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "BloodGroup": {
+                    "type": "string"
+                  },
+                  "PhoneNumber": {
+                    "type": "string"
+                  },
+                  "AlternativePhoneNumber": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "AdmissionDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "FatherName": {
+                    "type": "string"
+                  },
+                  "FatherOccupation": {
+                    "type": "string"
+                  },
+                  "FatherPhoneNumber": {
+                    "type": "string"
+                  },
+                  "MotherName": {
+                    "type": "string"
+                  },
+                  "MotherOccupation": {
+                    "type": "string"
+                  },
+                  "MotherPhoneNumber": {
+                    "type": "string"
+                  },
+                  "ParentEmail": {
+                    "type": "string"
+                  },
+                  "AadharNumber": {
+                    "type": "string"
+                  },
+                  "UploadAadhar": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "AadharPath": {
+                    "type": "string"
+                  },
+                  "Religion": {
+                    "type": "string"
+                  },
+                  "Caste": {
+                    "type": "string"
+                  },
+                  "CasteName": {
+                    "type": "string"
+                  },
+                  "Nationality": {
+                    "type": "string"
+                  },
+                  "AddressType": {
+                    "type": "string"
+                  },
+                  "DoorNo": {
+                    "type": "string"
+                  },
+                  "Street": {
+                    "type": "string"
+                  },
+                  "Area": {
+                    "type": "string"
+                  },
+                  "City": {
+                    "type": "string"
+                  },
+                  "District": {
+                    "type": "string"
+                  },
+                  "State": {
+                    "type": "string"
+                  },
+                  "Pincode": {
+                    "type": "string"
+                  },
+                  "UserName": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "DegreeType1": {
+                    "type": "string"
+                  },
+                  "DegreeName1": {
+                    "type": "string"
+                  },
+                  "InstituteName1": {
+                    "type": "string"
+                  },
+                  "YearPassedOut1": {
+                    "type": "string"
+                  },
+                  "DegreeType2": {
+                    "type": "string"
+                  },
+                  "DegreeName2": {
+                    "type": "string"
+                  },
+                  "InstituteName2": {
+                    "type": "string"
+                  },
+                  "YearPassedOut2": {
+                    "type": "string"
+                  },
+                  "DegreeType3": {
+                    "type": "string"
+                  },
+                  "DegreeName3": {
+                    "type": "string"
+                  },
+                  "InstituteName3": {
+                    "type": "string"
+                  },
+                  "YearPassedOut3": {
+                    "type": "string"
+                  },
+                  "DegreeType4": {
+                    "type": "string"
+                  },
+                  "DegreeName4": {
+                    "type": "string"
+                  },
+                  "InstituteName4": {
+                    "type": "string"
+                  },
+                  "YearPassedOut4": {
+                    "type": "string"
+                  },
+                  "DegreeType5": {
+                    "type": "string"
+                  },
+                  "DegreeName5": {
+                    "type": "string"
+                  },
+                  "InstituteName5": {
+                    "type": "string"
+                  },
+                  "YearPassedOut5": {
+                    "type": "string"
+                  },
+                  "DegreeType6": {
+                    "type": "string"
+                  },
+                  "DegreeName6": {
+                    "type": "string"
+                  },
+                  "InstituteName6": {
+                    "type": "string"
+                  },
+                  "YearPassedOut6": {
+                    "type": "string"
+                  },
+                  "DegreeType7": {
+                    "type": "string"
+                  },
+                  "DegreeName7": {
+                    "type": "string"
+                  },
+                  "InstituteName7": {
+                    "type": "string"
+                  },
+                  "YearPassedOut7": {
+                    "type": "string"
+                  },
+                  "DegreeType8": {
+                    "type": "string"
+                  },
+                  "DegreeName8": {
+                    "type": "string"
+                  },
+                  "InstituteName8": {
+                    "type": "string"
+                  },
+                  "YearPassedOut8": {
+                    "type": "string"
+                  },
+                  "DegreeType9": {
+                    "type": "string"
+                  },
+                  "DegreeName9": {
+                    "type": "string"
+                  },
+                  "InstituteName9": {
+                    "type": "string"
+                  },
+                  "YearPassedOut9": {
+                    "type": "string"
+                  },
+                  "DegreeType10": {
+                    "type": "string"
+                  },
+                  "DegreeName10": {
+                    "type": "string"
+                  },
+                  "InstituteName10": {
+                    "type": "string"
+                  },
+                  "YearPassedOut10": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                },
+                "Course": {
+                  "style": "form"
+                },
+                "Photo": {
+                  "style": "form"
+                },
+                "PhotoPath": {
+                  "style": "form"
+                },
+                "FirstName": {
+                  "style": "form"
+                },
+                "MiddleName": {
+                  "style": "form"
+                },
+                "LastName": {
+                  "style": "form"
+                },
+                "DateOfBirth": {
+                  "style": "form"
+                },
+                "BloodGroup": {
+                  "style": "form"
+                },
+                "PhoneNumber": {
+                  "style": "form"
+                },
+                "AlternativePhoneNumber": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "AdmissionDate": {
+                  "style": "form"
+                },
+                "FatherName": {
+                  "style": "form"
+                },
+                "FatherOccupation": {
+                  "style": "form"
+                },
+                "FatherPhoneNumber": {
+                  "style": "form"
+                },
+                "MotherName": {
+                  "style": "form"
+                },
+                "MotherOccupation": {
+                  "style": "form"
+                },
+                "MotherPhoneNumber": {
+                  "style": "form"
+                },
+                "ParentEmail": {
+                  "style": "form"
+                },
+                "AadharNumber": {
+                  "style": "form"
+                },
+                "UploadAadhar": {
+                  "style": "form"
+                },
+                "AadharPath": {
+                  "style": "form"
+                },
+                "Religion": {
+                  "style": "form"
+                },
+                "Caste": {
+                  "style": "form"
+                },
+                "CasteName": {
+                  "style": "form"
+                },
+                "Nationality": {
+                  "style": "form"
+                },
+                "AddressType": {
+                  "style": "form"
+                },
+                "DoorNo": {
+                  "style": "form"
+                },
+                "Street": {
+                  "style": "form"
+                },
+                "Area": {
+                  "style": "form"
+                },
+                "City": {
+                  "style": "form"
+                },
+                "District": {
+                  "style": "form"
+                },
+                "State": {
+                  "style": "form"
+                },
+                "Pincode": {
+                  "style": "form"
+                },
+                "UserName": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "DegreeType1": {
+                  "style": "form"
+                },
+                "DegreeName1": {
+                  "style": "form"
+                },
+                "InstituteName1": {
+                  "style": "form"
+                },
+                "YearPassedOut1": {
+                  "style": "form"
+                },
+                "DegreeType2": {
+                  "style": "form"
+                },
+                "DegreeName2": {
+                  "style": "form"
+                },
+                "InstituteName2": {
+                  "style": "form"
+                },
+                "YearPassedOut2": {
+                  "style": "form"
+                },
+                "DegreeType3": {
+                  "style": "form"
+                },
+                "DegreeName3": {
+                  "style": "form"
+                },
+                "InstituteName3": {
+                  "style": "form"
+                },
+                "YearPassedOut3": {
+                  "style": "form"
+                },
+                "DegreeType4": {
+                  "style": "form"
+                },
+                "DegreeName4": {
+                  "style": "form"
+                },
+                "InstituteName4": {
+                  "style": "form"
+                },
+                "YearPassedOut4": {
+                  "style": "form"
+                },
+                "DegreeType5": {
+                  "style": "form"
+                },
+                "DegreeName5": {
+                  "style": "form"
+                },
+                "InstituteName5": {
+                  "style": "form"
+                },
+                "YearPassedOut5": {
+                  "style": "form"
+                },
+                "DegreeType6": {
+                  "style": "form"
+                },
+                "DegreeName6": {
+                  "style": "form"
+                },
+                "InstituteName6": {
+                  "style": "form"
+                },
+                "YearPassedOut6": {
+                  "style": "form"
+                },
+                "DegreeType7": {
+                  "style": "form"
+                },
+                "DegreeName7": {
+                  "style": "form"
+                },
+                "InstituteName7": {
+                  "style": "form"
+                },
+                "YearPassedOut7": {
+                  "style": "form"
+                },
+                "DegreeType8": {
+                  "style": "form"
+                },
+                "DegreeName8": {
+                  "style": "form"
+                },
+                "InstituteName8": {
+                  "style": "form"
+                },
+                "YearPassedOut8": {
+                  "style": "form"
+                },
+                "DegreeType9": {
+                  "style": "form"
+                },
+                "DegreeName9": {
+                  "style": "form"
+                },
+                "InstituteName9": {
+                  "style": "form"
+                },
+                "YearPassedOut9": {
+                  "style": "form"
+                },
+                "DegreeType10": {
+                  "style": "form"
+                },
+                "DegreeName10": {
+                  "style": "form"
+                },
+                "InstituteName10": {
+                  "style": "form"
+                },
+                "YearPassedOut10": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/tests/add": {
+      "post": {
+        "tags": [
+          "AddTest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Test"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Test"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Test"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Test"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/content/by-login": {
+      "post": {
+        "tags": [
+          "Content"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "username": {
+                  "style": "form"
+                },
+                "password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/Course/by-login": {
+      "post": {
+        "tags": [
+          "Course"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "username": {
+                  "style": "form"
+                },
+                "password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Course"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Dashboard/graph-data": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dashboard/leaderboard": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dashboard/leaderboard-today": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Dashboard/correct-graph": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/fetch": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete": {
+      "delete": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/preview/video": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/preview/pdf": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/courses": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/testnames": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/subjects": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/topics": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/delete/testnos": {
+      "get": {
+        "tags": [
+          "DeleteExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/delete": {
+      "delete": {
+        "tags": [
+          "DeleteNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/delete/courses": {
+      "get": {
+        "tags": [
+          "DeleteNotes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/delete/subjects": {
+      "get": {
+        "tags": [
+          "DeleteNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/delete/topics": {
+      "get": {
+        "tags": [
+          "DeleteNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/registration/delete/{id}": {
+      "delete": {
+        "tags": [
+          "DeleteRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/tests/delete/bulk": {
+      "post": {
+        "tags": [
+          "DeleteTest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteRequest"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit": {
+      "put": {
+        "tags": [
+          "EditExam"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ID": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Course": {
+                    "type": "string"
+                  },
+                  "TestName": {
+                    "type": "string"
+                  },
+                  "Subject": {
+                    "type": "string"
+                  },
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "TestNo": {
+                    "type": "string"
+                  },
+                  "Video": {
+                    "type": "string"
+                  },
+                  "Pdf": {
+                    "type": "string"
+                  },
+                  "VideoFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "PdfFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "ID": {
+                  "style": "form"
+                },
+                "Course": {
+                  "style": "form"
+                },
+                "TestName": {
+                  "style": "form"
+                },
+                "Subject": {
+                  "style": "form"
+                },
+                "Topic": {
+                  "style": "form"
+                },
+                "TestNo": {
+                  "style": "form"
+                },
+                "Video": {
+                  "style": "form"
+                },
+                "Pdf": {
+                  "style": "form"
+                },
+                "VideoFile": {
+                  "style": "form"
+                },
+                "PdfFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit/preview/video": {
+      "get": {
+        "tags": [
+          "EditExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit/preview/pdf": {
+      "get": {
+        "tags": [
+          "EditExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit/courses": {
+      "get": {
+        "tags": [
+          "EditExam"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit/testnames": {
+      "get": {
+        "tags": [
+          "EditExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit/subjects": {
+      "get": {
+        "tags": [
+          "EditExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit/topics": {
+      "get": {
+        "tags": [
+          "EditExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/edit/testnos": {
+      "get": {
+        "tags": [
+          "EditExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/edit": {
+      "put": {
+        "tags": [
+          "EditNotes"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string",
+                    "format": "uuid"
+                  },
+                  "Mode": {
+                    "type": "string"
+                  },
+                  "Course": {
+                    "type": "string"
+                  },
+                  "Subject": {
+                    "type": "string"
+                  },
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "VideoPath": {
+                    "type": "string"
+                  },
+                  "PdfPath": {
+                    "type": "string"
+                  },
+                  "VideoFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "PdfFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Mode": {
+                  "style": "form"
+                },
+                "Course": {
+                  "style": "form"
+                },
+                "Subject": {
+                  "style": "form"
+                },
+                "Topic": {
+                  "style": "form"
+                },
+                "VideoPath": {
+                  "style": "form"
+                },
+                "PdfPath": {
+                  "style": "form"
+                },
+                "VideoFile": {
+                  "style": "form"
+                },
+                "PdfFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/edit/courses": {
+      "get": {
+        "tags": [
+          "EditNotes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/edit/subjects": {
+      "get": {
+        "tags": [
+          "EditNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/edit/topics": {
+      "get": {
+        "tags": [
+          "EditNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/registration/edit/{id}": {
+      "get": {
+        "tags": [
+          "EditRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "EditRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "string"
+                  },
+                  "Role": {
+                    "type": "string"
+                  },
+                  "Course": {
+                    "type": "string"
+                  },
+                  "Photo": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "PhotoPath": {
+                    "type": "string"
+                  },
+                  "FirstName": {
+                    "type": "string"
+                  },
+                  "MiddleName": {
+                    "type": "string"
+                  },
+                  "LastName": {
+                    "type": "string"
+                  },
+                  "DateOfBirth": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "BloodGroup": {
+                    "type": "string"
+                  },
+                  "PhoneNumber": {
+                    "type": "string"
+                  },
+                  "AlternativePhoneNumber": {
+                    "type": "string"
+                  },
+                  "Email": {
+                    "type": "string"
+                  },
+                  "AdmissionDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "FatherName": {
+                    "type": "string"
+                  },
+                  "FatherOccupation": {
+                    "type": "string"
+                  },
+                  "FatherPhoneNumber": {
+                    "type": "string"
+                  },
+                  "MotherName": {
+                    "type": "string"
+                  },
+                  "MotherOccupation": {
+                    "type": "string"
+                  },
+                  "MotherPhoneNumber": {
+                    "type": "string"
+                  },
+                  "ParentEmail": {
+                    "type": "string"
+                  },
+                  "AadharNumber": {
+                    "type": "string"
+                  },
+                  "UploadAadhar": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "AadharPath": {
+                    "type": "string"
+                  },
+                  "Religion": {
+                    "type": "string"
+                  },
+                  "Caste": {
+                    "type": "string"
+                  },
+                  "CasteName": {
+                    "type": "string"
+                  },
+                  "Nationality": {
+                    "type": "string"
+                  },
+                  "AddressType": {
+                    "type": "string"
+                  },
+                  "DoorNo": {
+                    "type": "string"
+                  },
+                  "Street": {
+                    "type": "string"
+                  },
+                  "Area": {
+                    "type": "string"
+                  },
+                  "City": {
+                    "type": "string"
+                  },
+                  "District": {
+                    "type": "string"
+                  },
+                  "State": {
+                    "type": "string"
+                  },
+                  "Pincode": {
+                    "type": "string"
+                  },
+                  "UserName": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "DegreeType1": {
+                    "type": "string"
+                  },
+                  "DegreeName1": {
+                    "type": "string"
+                  },
+                  "InstituteName1": {
+                    "type": "string"
+                  },
+                  "YearPassedOut1": {
+                    "type": "string"
+                  },
+                  "DegreeType2": {
+                    "type": "string"
+                  },
+                  "DegreeName2": {
+                    "type": "string"
+                  },
+                  "InstituteName2": {
+                    "type": "string"
+                  },
+                  "YearPassedOut2": {
+                    "type": "string"
+                  },
+                  "DegreeType3": {
+                    "type": "string"
+                  },
+                  "DegreeName3": {
+                    "type": "string"
+                  },
+                  "InstituteName3": {
+                    "type": "string"
+                  },
+                  "YearPassedOut3": {
+                    "type": "string"
+                  },
+                  "DegreeType4": {
+                    "type": "string"
+                  },
+                  "DegreeName4": {
+                    "type": "string"
+                  },
+                  "InstituteName4": {
+                    "type": "string"
+                  },
+                  "YearPassedOut4": {
+                    "type": "string"
+                  },
+                  "DegreeType5": {
+                    "type": "string"
+                  },
+                  "DegreeName5": {
+                    "type": "string"
+                  },
+                  "InstituteName5": {
+                    "type": "string"
+                  },
+                  "YearPassedOut5": {
+                    "type": "string"
+                  },
+                  "DegreeType6": {
+                    "type": "string"
+                  },
+                  "DegreeName6": {
+                    "type": "string"
+                  },
+                  "InstituteName6": {
+                    "type": "string"
+                  },
+                  "YearPassedOut6": {
+                    "type": "string"
+                  },
+                  "DegreeType7": {
+                    "type": "string"
+                  },
+                  "DegreeName7": {
+                    "type": "string"
+                  },
+                  "InstituteName7": {
+                    "type": "string"
+                  },
+                  "YearPassedOut7": {
+                    "type": "string"
+                  },
+                  "DegreeType8": {
+                    "type": "string"
+                  },
+                  "DegreeName8": {
+                    "type": "string"
+                  },
+                  "InstituteName8": {
+                    "type": "string"
+                  },
+                  "YearPassedOut8": {
+                    "type": "string"
+                  },
+                  "DegreeType9": {
+                    "type": "string"
+                  },
+                  "DegreeName9": {
+                    "type": "string"
+                  },
+                  "InstituteName9": {
+                    "type": "string"
+                  },
+                  "YearPassedOut9": {
+                    "type": "string"
+                  },
+                  "DegreeType10": {
+                    "type": "string"
+                  },
+                  "DegreeName10": {
+                    "type": "string"
+                  },
+                  "InstituteName10": {
+                    "type": "string"
+                  },
+                  "YearPassedOut10": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Role": {
+                  "style": "form"
+                },
+                "Course": {
+                  "style": "form"
+                },
+                "Photo": {
+                  "style": "form"
+                },
+                "PhotoPath": {
+                  "style": "form"
+                },
+                "FirstName": {
+                  "style": "form"
+                },
+                "MiddleName": {
+                  "style": "form"
+                },
+                "LastName": {
+                  "style": "form"
+                },
+                "DateOfBirth": {
+                  "style": "form"
+                },
+                "BloodGroup": {
+                  "style": "form"
+                },
+                "PhoneNumber": {
+                  "style": "form"
+                },
+                "AlternativePhoneNumber": {
+                  "style": "form"
+                },
+                "Email": {
+                  "style": "form"
+                },
+                "AdmissionDate": {
+                  "style": "form"
+                },
+                "FatherName": {
+                  "style": "form"
+                },
+                "FatherOccupation": {
+                  "style": "form"
+                },
+                "FatherPhoneNumber": {
+                  "style": "form"
+                },
+                "MotherName": {
+                  "style": "form"
+                },
+                "MotherOccupation": {
+                  "style": "form"
+                },
+                "MotherPhoneNumber": {
+                  "style": "form"
+                },
+                "ParentEmail": {
+                  "style": "form"
+                },
+                "AadharNumber": {
+                  "style": "form"
+                },
+                "UploadAadhar": {
+                  "style": "form"
+                },
+                "AadharPath": {
+                  "style": "form"
+                },
+                "Religion": {
+                  "style": "form"
+                },
+                "Caste": {
+                  "style": "form"
+                },
+                "CasteName": {
+                  "style": "form"
+                },
+                "Nationality": {
+                  "style": "form"
+                },
+                "AddressType": {
+                  "style": "form"
+                },
+                "DoorNo": {
+                  "style": "form"
+                },
+                "Street": {
+                  "style": "form"
+                },
+                "Area": {
+                  "style": "form"
+                },
+                "City": {
+                  "style": "form"
+                },
+                "District": {
+                  "style": "form"
+                },
+                "State": {
+                  "style": "form"
+                },
+                "Pincode": {
+                  "style": "form"
+                },
+                "UserName": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "DegreeType1": {
+                  "style": "form"
+                },
+                "DegreeName1": {
+                  "style": "form"
+                },
+                "InstituteName1": {
+                  "style": "form"
+                },
+                "YearPassedOut1": {
+                  "style": "form"
+                },
+                "DegreeType2": {
+                  "style": "form"
+                },
+                "DegreeName2": {
+                  "style": "form"
+                },
+                "InstituteName2": {
+                  "style": "form"
+                },
+                "YearPassedOut2": {
+                  "style": "form"
+                },
+                "DegreeType3": {
+                  "style": "form"
+                },
+                "DegreeName3": {
+                  "style": "form"
+                },
+                "InstituteName3": {
+                  "style": "form"
+                },
+                "YearPassedOut3": {
+                  "style": "form"
+                },
+                "DegreeType4": {
+                  "style": "form"
+                },
+                "DegreeName4": {
+                  "style": "form"
+                },
+                "InstituteName4": {
+                  "style": "form"
+                },
+                "YearPassedOut4": {
+                  "style": "form"
+                },
+                "DegreeType5": {
+                  "style": "form"
+                },
+                "DegreeName5": {
+                  "style": "form"
+                },
+                "InstituteName5": {
+                  "style": "form"
+                },
+                "YearPassedOut5": {
+                  "style": "form"
+                },
+                "DegreeType6": {
+                  "style": "form"
+                },
+                "DegreeName6": {
+                  "style": "form"
+                },
+                "InstituteName6": {
+                  "style": "form"
+                },
+                "YearPassedOut6": {
+                  "style": "form"
+                },
+                "DegreeType7": {
+                  "style": "form"
+                },
+                "DegreeName7": {
+                  "style": "form"
+                },
+                "InstituteName7": {
+                  "style": "form"
+                },
+                "YearPassedOut7": {
+                  "style": "form"
+                },
+                "DegreeType8": {
+                  "style": "form"
+                },
+                "DegreeName8": {
+                  "style": "form"
+                },
+                "InstituteName8": {
+                  "style": "form"
+                },
+                "YearPassedOut8": {
+                  "style": "form"
+                },
+                "DegreeType9": {
+                  "style": "form"
+                },
+                "DegreeName9": {
+                  "style": "form"
+                },
+                "InstituteName9": {
+                  "style": "form"
+                },
+                "YearPassedOut9": {
+                  "style": "form"
+                },
+                "DegreeType10": {
+                  "style": "form"
+                },
+                "DegreeName10": {
+                  "style": "form"
+                },
+                "InstituteName10": {
+                  "style": "form"
+                },
+                "YearPassedOut10": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/tests/edit/dropdowns": {
+      "get": {
+        "tags": [
+          "EditTest"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/tests/edit/get": {
+      "post": {
+        "tags": [
+          "EditTest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SelectionRequest"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SelectionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SelectionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SelectionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/tests/edit/update": {
+      "put": {
+        "tags": [
+          "EditTest"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditTestRequest"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditTestRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditTestRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditTestRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/pdf/generate": {
+      "post": {
+        "tags": [
+          "GeneratePdf"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PdfRequestModel"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PdfRequestModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PdfRequestModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PdfRequestModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/courses": {
+      "get": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/testnames": {
+      "get": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/subjects": {
+      "get": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/topics": {
+      "get": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/testnos": {
+      "get": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/languages": {
+      "get": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/upload": {
+      "post": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Type": {
+                    "type": "string"
+                  },
+                  "Course": {
+                    "type": "string"
+                  },
+                  "TestName": {
+                    "type": "string"
+                  },
+                  "Subject": {
+                    "type": "string"
+                  },
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "TestNo": {
+                    "type": "string"
+                  },
+                  "QuestionFile": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "AnswerFile": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "Type": {
+                  "style": "form"
+                },
+                "Course": {
+                  "style": "form"
+                },
+                "TestName": {
+                  "style": "form"
+                },
+                "Subject": {
+                  "style": "form"
+                },
+                "Topic": {
+                  "style": "form"
+                },
+                "TestNo": {
+                  "style": "form"
+                },
+                "QuestionFile": {
+                  "style": "form"
+                },
+                "AnswerFile": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer": {
+      "post": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              },
+              "encoding": {
+                "file": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/QuestionAnswer/types": {
+      "get": {
+        "tags": [
+          "QuestionAnswer"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/Subject/from-notes": {
+      "post": {
+        "tags": [
+          "Subject"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "username": {
+                  "style": "form"
+                },
+                "password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserSubject"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserSubject"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserSubject"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/UserLogin/login": {
+      "post": {
+        "tags": [
+          "UserLogin"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "username": {
+                  "style": "form"
+                },
+                "password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/fetch": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/preview/video": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/preview/pdf": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testNo",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/courses": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/testnames": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/subjects": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/topics": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/exam/view/testnos": {
+      "get": {
+        "tags": [
+          "ViewExam"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "testName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/view/by-selection": {
+      "get": {
+        "tags": [
+          "ViewNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "topic",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/view/courses": {
+      "get": {
+        "tags": [
+          "ViewNotes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/view/subjects": {
+      "get": {
+        "tags": [
+          "ViewNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/notes/view/topics": {
+      "get": {
+        "tags": [
+          "ViewNotes"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "subject",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/registration/view/by-id/{id}": {
+      "get": {
+        "tags": [
+          "ViewRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/admin/registration/view/by-course/{course}": {
+      "get": {
+        "tags": [
+          "ViewRegistration"
+        ],
+        "parameters": [
+          {
+            "name": "course",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/user/WriteTest/by-login": {
+      "post": {
+        "tags": [
+          "WriteTest"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string"
+                  },
+                  "password": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "username": {
+                  "style": "form"
+                },
+                "password": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/WriteTest/save-answer": {
+      "post": {
+        "tags": [
+          "WriteTest"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Username": {
+                    "type": "string"
+                  },
+                  "TestName": {
+                    "type": "string"
+                  },
+                  "Subject": {
+                    "type": "string"
+                  },
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "TestNo": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Language": {
+                    "type": "string"
+                  },
+                  "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "QuestionNo": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "AnswerText": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Username": {
+                  "style": "form"
+                },
+                "TestName": {
+                  "style": "form"
+                },
+                "Subject": {
+                  "style": "form"
+                },
+                "Topic": {
+                  "style": "form"
+                },
+                "TestNo": {
+                  "style": "form"
+                },
+                "Language": {
+                  "style": "form"
+                },
+                "Date": {
+                  "style": "form"
+                },
+                "QuestionNo": {
+                  "style": "form"
+                },
+                "AnswerText": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/WriteTest/save-result": {
+      "post": {
+        "tags": [
+          "WriteTest"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "Id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Username": {
+                    "type": "string"
+                  },
+                  "Password": {
+                    "type": "string"
+                  },
+                  "Course": {
+                    "type": "string"
+                  },
+                  "TestName": {
+                    "type": "string"
+                  },
+                  "Subject": {
+                    "type": "string"
+                  },
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "TestNo": {
+                    "type": "string"
+                  },
+                  "Language": {
+                    "type": "string"
+                  },
+                  "Date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Correct": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Wrong": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Skipped": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "TotalScore": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "CreatedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  }
+                }
+              },
+              "encoding": {
+                "Id": {
+                  "style": "form"
+                },
+                "Username": {
+                  "style": "form"
+                },
+                "Password": {
+                  "style": "form"
+                },
+                "Course": {
+                  "style": "form"
+                },
+                "TestName": {
+                  "style": "form"
+                },
+                "Subject": {
+                  "style": "form"
+                },
+                "Topic": {
+                  "style": "form"
+                },
+                "TestNo": {
+                  "style": "form"
+                },
+                "Language": {
+                  "style": "form"
+                },
+                "Date": {
+                  "style": "form"
+                },
+                "Correct": {
+                  "style": "form"
+                },
+                "Wrong": {
+                  "style": "form"
+                },
+                "Skipped": {
+                  "style": "form"
+                },
+                "TotalScore": {
+                  "style": "form"
+                },
+                "CreatedAt": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/WriteTest/fetch-review": {
+      "post": {
+        "tags": [
+          "WriteTest"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "testName": {
+                    "type": "string"
+                  },
+                  "testNo": {
+                    "type": "string"
+                  },
+                  "username": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "testName": {
+                  "style": "form"
+                },
+                "testNo": {
+                  "style": "form"
+                },
+                "username": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/WriteTest/get-papers": {
+      "post": {
+        "tags": [
+          "WriteTest"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "testName": {
+                    "type": "string"
+                  },
+                  "subject": {
+                    "type": "string"
+                  },
+                  "topic": {
+                    "type": "string"
+                  },
+                  "testNo": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "testName": {
+                  "style": "form"
+                },
+                "subject": {
+                  "style": "form"
+                },
+                "topic": {
+                  "style": "form"
+                },
+                "testNo": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/WriteTest/get-exam-video": {
+      "post": {
+        "tags": [
+          "WriteTest"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "course": {
+                    "type": "string"
+                  },
+                  "testName": {
+                    "type": "string"
+                  },
+                  "subject": {
+                    "type": "string"
+                  },
+                  "topic": {
+                    "type": "string"
+                  },
+                  "testNo": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "course": {
+                  "style": "form"
+                },
+                "testName": {
+                  "style": "form"
+                },
+                "subject": {
+                  "style": "form"
+                },
+                "topic": {
+                  "style": "form"
+                },
+                "testNo": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Course": {
+        "type": "object",
+        "properties": {
+          "courseName": {
+            "type": "string",
+            "nullable": true
+          },
+          "testName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "topic": {
+            "type": "string",
+            "nullable": true
+          },
+          "testNo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeleteRequest": {
+        "type": "object",
+        "properties": {
+          "course": {
+            "type": "string",
+            "nullable": true
+          },
+          "testName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "topic": {
+            "type": "string",
+            "nullable": true
+          },
+          "testNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditTestRequest": {
+        "type": "object",
+        "properties": {
+          "selection": {
+            "$ref": "#/components/schemas/SelectionRequest"
+          },
+          "testNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "questionNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "question": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionA": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionB": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionC": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionD": {
+            "type": "string",
+            "nullable": true
+          },
+          "answer": {
+            "type": "string",
+            "nullable": true
+          },
+          "timing": {
+            "type": "string",
+            "nullable": true
+          },
+          "editable": {
+            "$ref": "#/components/schemas/EditableFlags"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EditableFlags": {
+        "type": "object",
+        "properties": {
+          "testNo": {
+            "type": "boolean"
+          },
+          "date": {
+            "type": "boolean"
+          },
+          "questionNo": {
+            "type": "boolean"
+          },
+          "question": {
+            "type": "boolean"
+          },
+          "type": {
+            "type": "boolean"
+          },
+          "optionA": {
+            "type": "boolean"
+          },
+          "optionB": {
+            "type": "boolean"
+          },
+          "optionC": {
+            "type": "boolean"
+          },
+          "optionD": {
+            "type": "boolean"
+          },
+          "answer": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PdfRequestModel": {
+        "type": "object",
+        "properties": {
+          "course": {
+            "type": "string",
+            "nullable": true
+          },
+          "testName": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          },
+          "fromDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SelectionRequest": {
+        "type": "object",
+        "properties": {
+          "course": {
+            "type": "string",
+            "nullable": true
+          },
+          "testName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "topic": {
+            "type": "string",
+            "nullable": true
+          },
+          "testNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Test": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "course": {
+            "type": "string",
+            "nullable": true
+          },
+          "testName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subject": {
+            "type": "string",
+            "nullable": true
+          },
+          "topic": {
+            "type": "string",
+            "nullable": true
+          },
+          "testNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "language": {
+            "type": "string",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "questionNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "question": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionA": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionB": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionC": {
+            "type": "string",
+            "nullable": true
+          },
+          "optionD": {
+            "type": "string",
+            "nullable": true
+          },
+          "answer": {
+            "type": "string",
+            "nullable": true
+          },
+          "timing": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserSubject": {
+        "type": "object",
+        "properties": {
+          "courseName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subjectName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

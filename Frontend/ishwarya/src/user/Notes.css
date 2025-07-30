@@ -1,0 +1,48 @@
+.frame-box {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fafafa;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #0001;
+}
+
+.nav-card {
+  border: 2px solid #2962ff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  color: #0d47a1;
+  cursor: pointer;
+  font-weight: bold;
+  background: #fcfcfc;
+  margin-bottom: 24px;
+  text-align: center;           /* Center text horizontally */
+  display: flex;                /* Add flex for vertical centering */
+  align-items: center;          /* Center vertically */
+  justify-content: center;      /* Center horizontally */
+  min-height: 60px;             /* Optional: ensures enough height for vertical centering */
+}
+
+.label {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.button-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.action-btn {
+  background: #00e676;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}

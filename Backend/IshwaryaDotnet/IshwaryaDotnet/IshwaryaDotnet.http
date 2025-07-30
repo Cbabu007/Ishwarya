@@ -1,0 +1,6 @@
+@IshwaryaDotnet_HostAddress = http://localhost:5156
+
+GET {{IshwaryaDotnet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
